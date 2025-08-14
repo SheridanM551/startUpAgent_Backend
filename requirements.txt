@@ -1,7 +1,9 @@
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
-requests==2.32.3           # 呼叫 NVIDIA NIM
-python-dotenv==1.0.1       # 讀取 .env
+python-dotenv==1.0.1
 
-# 若後續想用更方便的 SSE 工具可加：
-# sse-starlette==1.6.1
+# —— LangChain 與 NVIDIA 端點（全部用 v1 線）——
+langchain==0.1.14               # 仍依賴 pydantic v1
+langchainhub==0.1.21
+langchain-openai==0.0.8          # 與 0.1.14 相容
+langchain-nvidia-ai-endpoints==0.1.5
