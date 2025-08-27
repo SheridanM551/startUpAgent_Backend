@@ -5,9 +5,9 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 # 手刻函數
-from .news_rag.RAG_main import news_generator
-from .statistic_search.advisor_main import advice_generator
-from . import config
+from startUpAgent_Backend.news_rag.RAG_main import news_generator
+from startUpAgent_Backend.statistic_search.advisor_main import advice_generator
+from startUpAgent_Backend import config
 
 # ---------- FastAPI ----------
 app = FastAPI()

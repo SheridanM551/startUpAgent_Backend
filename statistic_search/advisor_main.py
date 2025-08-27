@@ -4,10 +4,10 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 import os
-from .advisor_assistant import StrategyAdvisor, DEFAULT_SYSTEM_PROMPT_V2
+from startUpAgent_Backend.statistic_search.advisor_assistant import StrategyAdvisor, DEFAULT_SYSTEM_PROMPT_V2
 from typing import Dict
-from .topk_company import *
-from .. import config
+from startUpAgent_Backend.statistic_search.topk_company import *
+from startUpAgent_Backend import config
 
 async def advice_generator(user_input:dict, greedy_record=1, debug=0)-> Dict:
     """

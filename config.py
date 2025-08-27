@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # ---------- Init ----------
-load_dotenv("startUpAgent_Backend/.env")  # 載入環境變數檔案
+load_dotenv("startUpAgent_Backend/_.env")  # 載入環境變數檔案
 NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
 if not NVIDIA_API_KEY:
     raise RuntimeError("NVIDIA_API_KEY 未設定")

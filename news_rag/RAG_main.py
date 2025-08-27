@@ -1,7 +1,7 @@
 import json
 import re
 from typing import List, Tuple
-from .. import config
+from startUpAgent_Backend import config
 import asyncio
 
 # LangChain
