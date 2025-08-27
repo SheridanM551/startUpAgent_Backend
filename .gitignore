@@ -3,4 +3,4 @@ __pycache__/
 llm_advisor/
 advisor_output/
 test.ipynb
-.env
+*.env
