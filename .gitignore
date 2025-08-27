@@ -1,2 +1,5 @@
 .vscode/
 __pycache__/
+llm_advisor/
+advisor_output/
+test.ipynb

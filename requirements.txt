@@ -1,7 +1,8 @@
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-dotenv==1.0.1
-
+openai==1.101.0
+scikit-learn==1.7.1
 # —— LangChain 與 NVIDIA 端點（全部用 v1 線）——
 langchain==0.1.14               # 仍依賴 pydantic v1
 langchainhub==0.1.21
