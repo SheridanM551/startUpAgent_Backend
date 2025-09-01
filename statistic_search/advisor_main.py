@@ -68,16 +68,15 @@ async def advice_generator(user_input:dict, greedy_record=1, debug=0)-> Dict:
 
 
 test_inputs = [
-
     {
-        "Industry_Group": "Health Care",
-        "country": "United States",
-        "current_employees": 213,
-        "total_funding": 75_000_000,
-        "founded": 2010,
-        "current_objectives": "expand telemedicine platform",
-        "strengths": "HIPAA compliance",
-        "weaknesses": "slow product iteration"
+        "Industry_Group": "Artificial Intelligence",
+        "country": "Taiwan",
+        "current_employees": 54,
+        "total_funding": 25_000_000,
+        "founded": 2014,
+        "current_objectives": ["hit $1.5M ARR in 12 months", "land first enterprise logo"],
+        "strengths": ["excellent multilingual support", "lightweight API"],
+        "weaknesses": ["limited admin features", "no SOC2", "weak sales motion"]
     },
 
     {

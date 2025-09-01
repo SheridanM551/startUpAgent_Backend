@@ -5,8 +5,9 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 # 手刻函數
-from startUpAgent_Backend.news_rag.RAG_main import news_generator
-from startUpAgent_Backend.statistic_search.advisor_main import advice_generator
+from startUpAgent_Backend.news_rag.RAG_main import report_generator
+# from startUpAgent_Backend.statistic_search.advisor_main import advice_generator
+from startUpAgent_Backend.statistic_search.user_plot import user_plot_pipeline
 from startUpAgent_Backend import config
 
 # ---------- FastAPI ----------
@@ -29,11 +30,11 @@ async def rag(req: config.RAGreq):
     ''' contains two type of RAG: news and statistic'''
     try:
         req_dict = req.model_dump()
-        stat_res = await advice_generator(req_dict)
+        desc, plot_ = user_plot_pipeline(req_dict)
         print("INFO:     Completed statistic generation")
-        news_res = await news_generator(req_dict)
+        report = await report_generator(req_dict, desc)
         print("INFO:     Completed news generation")
-        return JSONResponse({"statistic": stat_res, "news": news_res})
+        return JSONResponse({"plot": plot_, "report": report})
     except Exception as e:
         raise HTTPException(500, f"Agent error: {e}")
 

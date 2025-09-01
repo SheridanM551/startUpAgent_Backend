@@ -68,7 +68,7 @@ Constraints:
 
 JSON schema to return:
 {
-  "quick_diagnosis": "2-3 sentence summary of where your company stands vs peers",
+  "quick_diagnosis": ["2-3 sentence summary of where your company stands vs peers"],
   "key_differences": [
     {"dimension": "pricing / go-to-market / product depth / operations", "your_company": "...", "top_peer": "CompanyName", "so_what": "..."}
   ],
