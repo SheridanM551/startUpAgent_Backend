@@ -1,7 +1,7 @@
 # Update: numeric columns use BOX PLOTS (with marker) and we emit JSON-friendly stats
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import json
 from startUpAgent_Backend.statistic_search.topk_company import *
 from typing import Dict, List, Optional, Tuple
